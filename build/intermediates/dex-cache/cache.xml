@@ -1,3 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\David\AndroidStudioProjects\Snowtam\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0 rc3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\David\AndroidStudioProjects\Snowtam\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.3.0_f7ae3464403fb82aea9c9d8154860703f98db1ff.jar" />
+    </item>
+    <item
+        jar="C:\Users\David\AndroidStudioProjects\Snowtam\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="false"
+        revision="24.0.0 rc3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\David\AndroidStudioProjects\Snowtam\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_59e780359f169c937721f6deb03838227b9564a3.jar" />
+    </item>
+    <item
+        jar="C:\Users\David\AndroidStudioProjects\Snowtam\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0 rc3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\David\AndroidStudioProjects\Snowtam\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_c57d20828c37e3f86522f4641fc34eccbbc17d0a.jar" />
+    </item>
+    <item
+        jar="C:\Users\David\AndroidStudioProjects\Snowtam\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0 rc3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\David\AndroidStudioProjects\Snowtam\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.3.0_3f1dca8bc9eef231a9c3783c11553102ca567c49.jar" />
+    </item>
+    <item
+        jar="C:\Users\David\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="false"
+        revision="24.0.0 rc3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\David\AndroidStudioProjects\Snowtam\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_264e9b98dc68e74ebc532319b4f5d17d1f708653.jar" />
+    </item>
+    <item
+        jar="C:\Users\David\AndroidStudioProjects\Snowtam\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0 rc3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\David\AndroidStudioProjects\Snowtam\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.3.0_b7b25caf399b8ff412215ef1b17fb4155118aef0.jar" />
+    </item>
+
+</items>
