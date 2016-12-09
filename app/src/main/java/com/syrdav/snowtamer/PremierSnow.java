@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.concurrent.ExecutionException;
 
@@ -45,6 +46,9 @@ public class PremierSnow extends Fragment implements View.OnClickListener{
         if(!oaci1.equals("")){
             try {
                 textView.setText((new Parseur()).execute(new String[]{lien1}).get());
+                if(textView.getText().toString().equals("")){
+                    textView.setText("NO SNOWTAM FOUND!!");
+                }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -81,13 +85,22 @@ public class PremierSnow extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         if(oaci1!=null){
+            Log.d("oacionclick", "onClick: "+this.getOaci());
             String url ="https://www.world-airport-codes.com/search?s="+this.getOaci();
             String coord=null;
             try {
                 coord = (new Localisation()).execute(new String[] {url}).get();
-                Intent versmap = new Intent(this.getContext(), MapsActivity.class);
-                versmap.putExtra("coord",coord);
-                startActivity(versmap);
+                Log.d("cordonnee", "coordonnees :" +coord);
+                if(!coord.equals("")){
+                    Log.d("cordonnee", "coordonnees :" +coord);
+                    Intent versmap = new Intent(this.getContext(), MapsActivity.class);
+                    versmap.putExtra("coord",coord);
+                    startActivity(versmap);
+                }else{
+                    Toast toast = Toast.makeText(this.getContext(),"No location found for OACI :" +this.getOaci(), Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {

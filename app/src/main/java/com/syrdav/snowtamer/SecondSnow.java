@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.concurrent.ExecutionException;
 
@@ -37,6 +38,9 @@ public class SecondSnow extends Fragment implements View.OnClickListener{
         if(!oaci2.equals("")){
             try {
                 textView.setText((new Parseur()).execute(new String[]{lien2}).get());
+                if(textView.getText().toString().equals("")){
+                    textView.setText("NO SNOWTAM FOUND!!");
+                }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -75,9 +79,16 @@ public class SecondSnow extends Fragment implements View.OnClickListener{
             String coord=null;
             try {
                 coord = (new Localisation()).execute(new String[] {url}).get();
-                Intent versmap = new Intent(this.getContext(), MapsActivity.class);
-                versmap.putExtra("coord",coord);
-                startActivity(versmap);
+
+                if(!coord.equals("")){
+                    Log.d("cordonnee", "coordonnees :" +coord);
+                    Intent versmap = new Intent(this.getContext(), MapsActivity.class);
+                    versmap.putExtra("coord",coord);
+                    startActivity(versmap);
+                }else{
+                    Toast toast = Toast.makeText(this.getContext(),"No place found", Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {

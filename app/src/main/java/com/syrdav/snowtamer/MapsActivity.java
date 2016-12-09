@@ -20,12 +20,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     String title = null;
     String lat=null;
     String longit=null;
+    String buffer = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         fromsnow = getIntent();
-        String buffer = fromsnow.getStringExtra("coord");
+        buffer = fromsnow.getStringExtra("coord");
         Log.d("buffer", "contain: "+buffer);
         infoLoc = buffer.split("/");
 
@@ -47,6 +48,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
+
         mMap = googleMap;
         title = infoLoc[0];
         lat = infoLoc[1];

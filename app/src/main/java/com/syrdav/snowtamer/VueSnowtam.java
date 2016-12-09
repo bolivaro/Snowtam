@@ -36,12 +36,12 @@ public class VueSnowtam extends AppCompatActivity {
     ArrayList<Fragment> fragments = null;
     Intent asksnowIntent = null;
     String firstsnow="";
-    String lien1 = null;
-    String lien2 = null;
-    String lien3 = null;
-    String oaci1 = null;
-    String oaci2 = null;
-    String oaci3 = null;
+    String lien1 = "";
+    String lien2 = "";
+    String lien3 = "";
+    String oaci1 = "";
+    String oaci2 = "";
+    String oaci3 = "";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,10 +56,12 @@ public class VueSnowtam extends AppCompatActivity {
 
 
         Log.d("oaci1", "onCreate: " +oaci1);
-        oaci1 = asksnowIntent.getStringExtra("OACI1");
-        lien1 = asksnowIntent.getStringExtra("lien1");
+        oaci1 += asksnowIntent.getStringExtra("OACI1");
+        lien1 +=asksnowIntent.getStringExtra("lien1");
 
-        if(!oaci1.equals("")){
+
+
+        if(!oaci1.equals("null")){
             fragments.add(Fragment.instantiate(this,PremierSnow.class.getName()));
             PremierSnow ps1 =(PremierSnow) fragments.get(0);
             ps1.setLien(lien1);
@@ -68,10 +70,11 @@ public class VueSnowtam extends AppCompatActivity {
 
 
         Log.d("oaci2", "onCreate: " +oaci2);
-        oaci2 = asksnowIntent.getStringExtra("OACI2");
-        lien2 = asksnowIntent.getStringExtra("lien2");
+        oaci2 += asksnowIntent.getStringExtra("OACI2");
+        lien2 += asksnowIntent.getStringExtra("lien2");
+        Log.d("oaci2deplus", "onCreate: " +oaci2);
 
-        if(!oaci2.equals("")){
+        if(!oaci2.equals("null")){
             fragments.add(Fragment.instantiate(this,SecondSnow.class.getName()));
             SecondSnow ss =(SecondSnow) fragments.get(1);
             ss.setLien(lien2);
@@ -79,10 +82,10 @@ public class VueSnowtam extends AppCompatActivity {
         }
 
         Log.d("oaci3", "onCreate: " +oaci3);
-        oaci3 = asksnowIntent.getStringExtra("OACI3");
-        lien3 = asksnowIntent.getStringExtra("lien3");
+        oaci3 += asksnowIntent.getStringExtra("OACI3");
+        lien3 += asksnowIntent.getStringExtra("lien3");
 
-        if(!oaci3.equals("")){
+        if(!oaci3.equals("null")){
             fragments.add(Fragment.instantiate(this,TroisiemeSnow.class.getName()));
             TroisiemeSnow ts =(TroisiemeSnow) fragments.get(2);
             ts.setLien(lien3);

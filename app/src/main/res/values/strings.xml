@@ -4,4 +4,10 @@
     <string name="Disconnect">Log out</string>
     <string name="about"> About?</string>
     <string name="title_activity_maps">Map</string>
+    <string name="noemailnopassword">"You have to enter email and password"</string>
+    <string name="incorrect">"incorrect email or password"</string>
+    <string name="oacisize"> "OACI must have 4 caracters"</string>
+    <string name="pleaseoaci">"Please enter at least one OACI"</string>
+    <string name="nolocation">"No location found for OACI :"</string>
+    <string name="noSnowtam">"NO SNOWTAM FOUND"</string>
 </resources>

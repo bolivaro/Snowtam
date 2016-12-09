@@ -55,7 +55,7 @@ public class Connexion extends AppCompatActivity implements View.OnClickListener
                 else{
                     user = new User(mail,psw);
                     user = db.getUser(mail);
-                    if(user!=null){
+                    if((user!=null)&&(user.getPassword().equals(psw))){
                         Intent versAsk = new Intent(this, AskSnowtam.class);
                         startActivity(versAsk);
                     }else{

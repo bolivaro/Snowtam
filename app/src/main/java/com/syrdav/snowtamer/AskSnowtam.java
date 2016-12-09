@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class AskSnowtam extends AppCompatActivity implements View.OnClickListener{
 
@@ -37,29 +38,64 @@ public class AskSnowtam extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-
+        Toast toast;
+        boolean go = false;
         String oaci1 = OACI1.getText().toString();
         String oaci2 = OACI2.getText().toString();
         String oaci3 = OACI3.getText().toString();
-
-        String url1 = "https://pilotweb.nas.faa.gov/PilotWeb/notamRetrievalByICAOAction.do?method=displayByICAOs&reportType=RAW&formatType=DOMESTIC&" +
-                "retrieveLocId=" +oaci1+
-                "&actionType=notamRetrievalByICAOs";
-        String url2 = "https://pilotweb.nas.faa.gov/PilotWeb/notamRetrievalByICAOAction.do?method=displayByICAOs&reportType=RAW&formatType=DOMESTIC&" +
-                "retrieveLocId=" +oaci2+
-                "&actionType=notamRetrievalByICAOs";
-        String url3 = "https://pilotweb.nas.faa.gov/PilotWeb/notamRetrievalByICAOAction.do?method=displayByICAOs&reportType=RAW&formatType=DOMESTIC&" +
-                "retrieveLocId=" +oaci3+
-                "&actionType=notamRetrievalByICAOs";
         Intent versvuesnow = new Intent(this, VueSnowtam.class);
-        versvuesnow.putExtra("lien1",url1);
-        versvuesnow.putExtra("OACI1",oaci1);
-        versvuesnow.putExtra("lien2",url2);
-        versvuesnow.putExtra("OACI2",oaci2);
-        versvuesnow.putExtra("lien3",url3);
-        versvuesnow.putExtra("OACI3",oaci3);
+        if((!oaci1.equals(""))||(!oaci2.equals(""))||(!oaci2.equals(""))){
+            if(!oaci1.equals("")){
+                if(oaci1.length()!=4){
+                    toast = Toast.makeText(this,"OACI must have 4 caracter", Toast.LENGTH_SHORT);
+                    toast.show();
+                }else{
+                    String url1 = "https://pilotweb.nas.faa.gov/PilotWeb/notamRetrievalByICAOAction.do?method=displayByICAOs&reportType=RAW&formatType=DOMESTIC&" +
+                            "retrieveLocId=" +oaci1+
+                            "&actionType=notamRetrievalByICAOs";
+                    versvuesnow.putExtra("lien1",url1);
+                    versvuesnow.putExtra("OACI1",oaci1);
+                    go = true;
+                }
+            }
+            if(!oaci2.equals("")){
+                if(oaci2.length()!=4){
+                    toast = Toast.makeText(this,"OACI must have 4 caracter", Toast.LENGTH_SHORT);
+                    toast.show();
+                }else{
 
-        startActivity(versvuesnow);
+                    String url2 = "https://pilotweb.nas.faa.gov/PilotWeb/notamRetrievalByICAOAction.do?method=displayByICAOs&reportType=RAW&formatType=DOMESTIC&" +
+                            "retrieveLocId=" +oaci2+
+                            "&actionType=notamRetrievalByICAOs";
+                    versvuesnow.putExtra("lien2",url2);
+                    versvuesnow.putExtra("OACI2",oaci2);
+                    go = true;
+                }
+            }
+            if(!oaci3.equals("")){
+                if(oaci3.length()!=4){
+                    toast = Toast.makeText(this,"OACI must have 4 caracter", Toast.LENGTH_SHORT);
+                    toast.show();
+                }else{
+                    String url3 = "https://pilotweb.nas.faa.gov/PilotWeb/notamRetrievalByICAOAction.do?method=displayByICAOs&reportType=RAW&formatType=DOMESTIC&" +
+                            "retrieveLocId=" +oaci3+
+                            "&actionType=notamRetrievalByICAOs";
+                    versvuesnow.putExtra("lien3",url3);
+                    versvuesnow.putExtra("OACI3",oaci3);
+                    go = true;
+                }
+            }
+            if(go){
+                startActivity(versvuesnow);
+            }
+
+
+        }else{
+            toast = Toast.makeText(this,"Please enter at least one OACI", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+
+
 
     }
 }

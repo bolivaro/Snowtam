@@ -68,7 +68,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_USER, new String[] { ID,
-                        EMAIL, PASSWORD }, PASSWORD + "=?",
+                        EMAIL, PASSWORD }, EMAIL + "=?",
                 new String[] {email }, null, null, null, null);
         User user;
 
