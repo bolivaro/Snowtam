@@ -9,13 +9,44 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="first snowtam"
+                android:id="@+id/showsnowTview"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="35dp" />
 
-    <TextView
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="snt1"
-        android:id="@+id/textView"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="86dp" />
+        android:text="translation"
+        android:id="@+id/transButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="53dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map"
+        android:id="@+id/mapButton"
+        android:layout_alignTop="@+id/transButton"
+        android:layout_alignEnd="@+id/scrollView" />
+
+
 </RelativeLayout>

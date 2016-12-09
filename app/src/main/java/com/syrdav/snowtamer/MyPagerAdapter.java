@@ -36,4 +36,5 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     public String getPageTitle(int position) {
         return title;
     }
+
 }

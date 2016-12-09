@@ -45,15 +45,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="register"
-            android:id="@+id/resgistButton"
+            android:id="@+id/registButton"
             android:layout_alignParentBottom="true"
             android:layout_alignEnd="@+id/connectButton"
             android:layout_alignStart="@+id/password" />
 
-        <android.support.v4.view.PagerTitleStrip
-            android:id= "@+id/pgr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top" />
+
 
 </RelativeLayout>
