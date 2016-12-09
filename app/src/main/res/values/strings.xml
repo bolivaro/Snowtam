@@ -10,4 +10,14 @@
     <string name="pleaseoaci">"Please enter at least one OACI"</string>
     <string name="nolocation">"No location found for OACI :"</string>
     <string name="noSnowtam">"NO SNOWTAM FOUND"</string>
+    <string name="send">Send</string>
+    <string name="code_oaci">code OACI</string>
+    <string name="register">register</string>
+    <string name="sign_in">sign in</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="sign_up">Sign up</string>
+    <string name="show_map">show Map</string>
+    <string name="alreadyaccount">"account already exist"</string>
+    <string name="accountcreated">"account creation with succes"</string>
 </resources>

@@ -35,12 +35,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         String mdp2 = secondpsw.getText().toString();
         user = db.getUser(mail);
         if(user!=null){
-            Toast toast = Toast.makeText(this,"account already exist", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this,getResources().getString(R.string.alreadyaccount), Toast.LENGTH_SHORT);
             toast.show();
         }else{
             user = new User(mail,mdp1);
             db.addUser(user);
-            Toast toast = Toast.makeText(this,"account created", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this,getResources().getString(R.string.accountcreated), Toast.LENGTH_SHORT);
             toast.show();
         }
 

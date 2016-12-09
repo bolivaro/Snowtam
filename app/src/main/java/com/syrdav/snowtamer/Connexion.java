@@ -49,7 +49,7 @@ public class Connexion extends AppCompatActivity implements View.OnClickListener
             // Si l'identifiant de la vue est celui du premier bouton
             case R.id.connectButton:
                 if((mail.equals("")||(psw.equals("")))){
-                    Toast toast = Toast.makeText(this,"You have to enter email and password", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(this,getResources().getString(R.string.noemailnopassword), Toast.LENGTH_SHORT);
                     toast.show();
                 }
                 else{
@@ -59,7 +59,7 @@ public class Connexion extends AppCompatActivity implements View.OnClickListener
                         Intent versAsk = new Intent(this, AskSnowtam.class);
                         startActivity(versAsk);
                     }else{
-                        Toast toast = Toast.makeText(this,"incorrect email or password", Toast.LENGTH_SHORT);
+                        Toast toast = Toast.makeText(this,getResources().getString(R.string.incorrect), Toast.LENGTH_SHORT);
                         toast.show();
                     }
 

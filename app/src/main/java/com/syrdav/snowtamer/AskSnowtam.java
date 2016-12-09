@@ -47,7 +47,7 @@ public class AskSnowtam extends AppCompatActivity implements View.OnClickListene
         if((!oaci1.equals(""))||(!oaci2.equals(""))||(!oaci2.equals(""))){
             if(!oaci1.equals("")){
                 if(oaci1.length()!=4){
-                    toast = Toast.makeText(this,"OACI must have 4 caracter", Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(this,getResources().getString(R.string.oacisize), Toast.LENGTH_SHORT);
                     toast.show();
                 }else{
                     String url1 = "https://pilotweb.nas.faa.gov/PilotWeb/notamRetrievalByICAOAction.do?method=displayByICAOs&reportType=RAW&formatType=DOMESTIC&" +
@@ -60,7 +60,7 @@ public class AskSnowtam extends AppCompatActivity implements View.OnClickListene
             }
             if(!oaci2.equals("")){
                 if(oaci2.length()!=4){
-                    toast = Toast.makeText(this,"OACI must have 4 caracter", Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(this,getResources().getString(R.string.oacisize), Toast.LENGTH_SHORT);
                     toast.show();
                 }else{
 
@@ -74,7 +74,7 @@ public class AskSnowtam extends AppCompatActivity implements View.OnClickListene
             }
             if(!oaci3.equals("")){
                 if(oaci3.length()!=4){
-                    toast = Toast.makeText(this,"OACI must have 4 caracter", Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(this,getResources().getString(R.string.oacisize), Toast.LENGTH_SHORT);
                     toast.show();
                 }else{
                     String url3 = "https://pilotweb.nas.faa.gov/PilotWeb/notamRetrievalByICAOAction.do?method=displayByICAOs&reportType=RAW&formatType=DOMESTIC&" +
@@ -91,7 +91,7 @@ public class AskSnowtam extends AppCompatActivity implements View.OnClickListene
 
 
         }else{
-            toast = Toast.makeText(this,"Please enter at least one OACI", Toast.LENGTH_SHORT);
+            toast = Toast.makeText(this,getResources().getString(R.string.pleaseoaci), Toast.LENGTH_SHORT);
             toast.show();
         }
 

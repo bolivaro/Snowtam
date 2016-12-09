@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Snowtamer</string>
+    <string name="Home">Accueil</string>
+    <string name="Disconnect">Se deconnecter</string>
+    <string name="about"> A propos</string>
+    <string name="title_activity_maps">Carte</string>
+    <string name="noemailnopassword">"vous devez entrer un email et un mot de passe"</string>
+    <string name="incorrect">"email ou mot de passe incorrect"</string>
+    <string name="oacisize"> "le code OACI doit avoir 4 caractères"</string>
+    <string name="pleaseoaci">"veillez entrer au moins un OACI"</string>
+    <string name="nolocation">"Aucune localisation geographique pour OACI :"</string>
+    <string name="noSnowtam">"AUCUN SNOWTAM TROUVE"</string>
+    <string name="send">Envoyer</string>
+    <string name="code_oaci">code OACI</string>
+    <string name="register">s'inscrire</string>
+    <string name="sign_in">se connecter</string>
+    <string name="password">mot de passe</string>
+    <string name="email">email</string>
+    <string name="sign_up">s'enregistrer</string>
+    <string name="show_map"> map</string>
+    <string name="alreadyaccount">"compte existant"</string>
+    <string name="accountcreated">"compte créé avec succès"</string>
+</resources>

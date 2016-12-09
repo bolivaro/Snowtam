@@ -39,7 +39,7 @@ public class SecondSnow extends Fragment implements View.OnClickListener{
             try {
                 textView.setText((new Parseur()).execute(new String[]{lien2}).get());
                 if(textView.getText().toString().equals("")){
-                    textView.setText("NO SNOWTAM FOUND!!");
+                    textView.setText(getResources().getString(R.string.noSnowtam));
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -86,7 +86,7 @@ public class SecondSnow extends Fragment implements View.OnClickListener{
                     versmap.putExtra("coord",coord);
                     startActivity(versmap);
                 }else{
-                    Toast toast = Toast.makeText(this.getContext(),"No place found", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(this.getContext(),getResources().getString(R.string.nolocation), Toast.LENGTH_SHORT);
                     toast.show();
                 }
             } catch (InterruptedException e) {

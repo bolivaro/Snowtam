@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
+        android:hint = "@string/email"
         android:ems="10"
         android:id="@+id/emailreg"
         android:layout_alignParentTop="true"
@@ -24,6 +25,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
+        android:hint="@string/password"
         android:id="@+id/firstpsw"
         android:layout_below="@+id/emailreg"
         android:layout_centerHorizontal="true"
@@ -34,6 +36,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
+        android:hint="@string/password"
         android:id="@+id/secondpsw"
         android:layout_below="@+id/firstpsw"
         android:layout_centerHorizontal="true"
@@ -42,7 +45,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign up"
+        android:text="@string/sign_up"
         android:id="@+id/signupButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />

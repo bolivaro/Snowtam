@@ -47,7 +47,7 @@ public class PremierSnow extends Fragment implements View.OnClickListener{
             try {
                 textView.setText((new Parseur()).execute(new String[]{lien1}).get());
                 if(textView.getText().toString().equals("")){
-                    textView.setText("NO SNOWTAM FOUND!!");
+                    textView.setText(getResources().getString(R.string.noSnowtam));
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -97,7 +97,7 @@ public class PremierSnow extends Fragment implements View.OnClickListener{
                     versmap.putExtra("coord",coord);
                     startActivity(versmap);
                 }else{
-                    Toast toast = Toast.makeText(this.getContext(),"No location found for OACI :" +this.getOaci(), Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(this.getContext(),getResources().getString(R.string.nolocation) +this.getOaci(), Toast.LENGTH_SHORT);
                     toast.show();
                 }
 

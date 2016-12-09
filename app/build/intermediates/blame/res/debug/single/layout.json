@@ -168,12 +168,12 @@
         "source": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\src\\main\\res\\layout\\snowtam2.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ask_snowtam.xml",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\src\\main\\res\\layout\\activity_ask_snowtam.xml"
-    },
-    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\Snowtamer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\snowtam3.xml",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\Snowtamer\\app\\src\\main\\res\\layout\\snowtam3.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ask_snowtam.xml",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\src\\main\\res\\layout\\activity_ask_snowtam.xml"
     },
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\Snowtamer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
@@ -192,12 +192,12 @@
         "source": "C:\\Users\\David\\AndroidStudioProjects\\Snowtamer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\Snowtamer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\Snowtamer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\Snowtamer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\Snowtamer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\Snowtamer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\Snowtamer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
@@ -208,12 +208,12 @@
         "source": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
-        "merged": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_big_media_narrow.xml"
-    },
-    {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_prediction.xml",
         "source": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\layout\\place_autocomplete_item_prediction.xml"
+    },
+    {
+        "merged": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\David\\AndroidStudioProjects\\Snowtam\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
         "merged": "C:\\Users\\David\\AndroidStudioProjects\\Snowtamer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
